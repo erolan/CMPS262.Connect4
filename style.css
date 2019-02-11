@@ -3,11 +3,14 @@ body {
      background: url(ppu_oldschool.jpg) no-repeat fixed center;
      background-size: cover;
      padding: 30px;
+     text-align: center;
+     color: white;
      -webkit-background-size: cover;
      -moz-background-size: cover;
      -o-background-size: cover;
      background-size: cover;
      background-color: #69BAB1B3;
+     font-size: larger;
 }
 
 .gameboard {
