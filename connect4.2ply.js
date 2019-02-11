@@ -13,8 +13,8 @@ class ConnectFour {
     for (let row = 0; row < this.ROWS; row++) {
       const $row = $('<div>')
         .addClass('row');
-        $board.append($row);
+        $gameBoard.append($row);
       }
-      console.log($gameboard.html());
+      console.log($gameBoard.html());
     }
 }

@@ -3,9 +3,9 @@ $(document).ready(function(){
   const ConnectFour = new ConnectFour('#ConnectFour')
 
   const $grid = $(selector);
-  $grid.html('ConnectFo');
+  $grid.html('ConnectFour');
   this.createGrid();
 }
 
-createFrid() {}
+createGrid() {}
 });
