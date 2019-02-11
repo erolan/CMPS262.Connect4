@@ -1,5 +1,5 @@
 $(document).ready(function(){
   //Make a grid to overwright buttons
-  const ConnectFour = new ConnectFour('#ConnectFour')
+  const connect4 = new Connect4('#connect4')
 
 });
