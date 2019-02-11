@@ -1,6 +1,6 @@
 body {
      font-family: Arial, Geneva, Helvetica, sans-serif;
-     background: url(ppc_oldschool.jpg) no-repeat fixed center;
+     background: url(ppu_oldschool.jpg) no-repeat fixed center;
      background-size: cover;
      padding: 30px;
      -webkit-background-size: cover;
@@ -14,4 +14,30 @@ body {
   border: 5px cadetblue solid;
   width: 350px;
   margin: 0 auto;
+}
+
+.gamboard button {
+	-moz-box-shadow: 0px 0px 0px 2px #9fb4f2;
+	-webkit-box-shadow: 0px 0px 0px 2px #9fb4f2;
+	box-shadow: 0px 0px 0px 2px #9fb4f2;
+	background-color:#7892c2;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	border:1px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:19px;
+	padding:12px 37px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #283966;
+}
+.gameboard button:hover {
+	background-color:#476e9e;
+}
+.gameboard:active {
+	position:relative;
+	top:1px;
 }
