@@ -1,10 +1,9 @@
-class ConnectFour {
+class Connect4 {
   constructor(selector){
     this.ROWS = 6;
     this.COLS = 7;
     this.selector = selector;
     this.createGrid();
-    //console.log (this);
   }
 
   createGrid() {
@@ -17,7 +16,8 @@ class ConnectFour {
             .addClass("col empty")
           $row.append($col);
         }
-       $board.append($row);
-     }
-   }
+      $board.append($row);
+    }
+      console.log($board.html());
+  }
 }
