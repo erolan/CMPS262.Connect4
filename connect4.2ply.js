@@ -19,5 +19,4 @@ class Connect4 {
       $board.append($row);
     }
       console.log($board.html());
-  }
 }
