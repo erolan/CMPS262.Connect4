@@ -1,4 +1,4 @@
-class Connect4{
+class Connect4 {
   constructor(selector){
     this.ROWS = 6;
     this.COLS = 7;
