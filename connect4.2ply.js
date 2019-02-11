@@ -13,7 +13,7 @@ class Connect4 {
          .addClass("row");
         for(let col = 0; col < this.COLS; col++)
           //const $col = $("<div>")
-          .addClass("col empty")
+          //.addClass("col empty")
           $row.append($col);
         }
       $board.append($row);
