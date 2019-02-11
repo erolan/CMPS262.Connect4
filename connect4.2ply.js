@@ -4,12 +4,12 @@ class ConnectFour {
     this.COLS = 7;
     this.selector = selector;
     this.createGrid();
-    console.log (this);
+    //console.log (this);
   }
 
   createGrid() {
     const $gameBoard = $(this.selector);
-    console.log($gameBoard);
+    //console.log($gameBoard);
     for (let row = 0; row < this.ROWS; row++) {
       const $row = $('<div>')
         .addClass('row');
