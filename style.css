@@ -9,3 +9,9 @@ body {
      background-size: cover;
      background-color: #69BAB1B3;
 }
+
+.gameboard {
+  border: 5px cadetblue solid;
+  width: 350px;
+  margin: 0 auto;
+}
