@@ -16,12 +16,12 @@ body {
   width: 415px;
   height: 360px;
   padding: 65px;
-  background: blue;
+  background: yellow;
   border: 9px solid green;
   border-radius: 20px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-   border-spacing: 9px 9px;
+   border-spacing: 3px 15px;
 }
 
 .row {
