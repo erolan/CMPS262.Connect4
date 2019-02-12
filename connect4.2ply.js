@@ -10,7 +10,7 @@ class Connect4 {
      const $board = $(this.selector);
      console.log($board)
      for (let row = 0; row < this.ROWS; row++) {
-       const $row = $("<div>")
+       const $row = $('<div>')
          .addClass("row");
          for(let col = 0; col < this.COLS; col++)
           const $col = $('div');
