@@ -9,34 +9,7 @@ body {
     font-size: larger;
 }
 
-/*.gamebuttons{
-  border: 30px cadetblue solid;
-  width: 350px;
-  margin: 0 auto;
-}
-
-.gamebuttons button {
-	background-color:#7892c2;
-	border-radius:10px;
-	border:1px solid #4e6096;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:29px;
-	padding:22px 37px;
-}
-.gamebuttons button:hover {
-	background-color:#476e9e;
-}
-.gamebuttons:active {
-	position:relative;
-	top:1px;
-}
-*/
 /* Creating the formatting for the gameboard */
-
-
 #connect4 {
   background-color: yellow;
   display: inline-block;

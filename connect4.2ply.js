@@ -1,8 +1,12 @@
+$(document).ready(function() {
+    //Make a grid to overwright buttons
+const connect4 = new Connect4('#connect4')
+}
+
 class Connect4 {
   constructor(selector) {
     this.ROWS = 6;
     this.COLS = 7;
-    this.selector = selector;
     this.createGrid();
   }
 
