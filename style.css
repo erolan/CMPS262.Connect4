@@ -16,7 +16,7 @@ body {
   width: 415px;
   height: 360px;
   padding: 25px;
-  background: #0077EE;
+  background: blue;
   border: 1px solid #0044AA;
   border-radius: 10px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
@@ -27,4 +27,13 @@ body {
 
 .row {
   display: table-row;
+}
+
+.cell {
+  display: table-cell;
+  background-color: #FFFFFF;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 2px;
 }
