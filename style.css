@@ -15,12 +15,11 @@ body {
   display: table;
   width: 415px;
   height: 360px;
-  padding: 25px;
+  padding: 65px;
   background: blue;
-  border: 1px solid #0044AA;
-  border-radius: 10px;
+  border: 9px solid green;
+  border-radius: 20px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
    border-spacing: 9px 9px;
 }
