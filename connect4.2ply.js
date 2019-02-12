@@ -4,7 +4,6 @@ class Connect4 {
     this.COLS = 7;
     this.selector = selector;
     this.createGrid();
-    this.setupEventListeners();
   }
 
   createGrid() {
