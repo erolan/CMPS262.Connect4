@@ -1,12 +1,12 @@
-<style type="text/css">
-
 body {
-     font-family: Arial, Geneva, Helvetica, sans-serif;
-     background: url(ppu_oldschool.jpg) no-repeat fixed center;
-     background-size: cover;
-     padding: 30px;
-     text-align: center;
-     color: yellow;
+    font-family: Arial, Geneva, Helvetica, sans-serif;
+    background: url(ppu_oldschool.jpg) no-repeat fixed center;
+    background-size: cover;
+    padding: 30px;
+    text-align: center;
+    color: yellow;
+    background-color: grey;
+    font-size: larger;
 }
 
 /*.gamebuttons{
