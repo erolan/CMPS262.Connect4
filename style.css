@@ -37,7 +37,7 @@ body {
   margin: 4px;
 }
 
-.chooserow {
+.choosecell {
   display: table-cell;
   background-color: red;
   width: 50px;

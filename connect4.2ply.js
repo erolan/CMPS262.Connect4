@@ -1,4 +1,4 @@
-$('#cell').click(function() {
+$('#cell').mouseover(function() {
   $('#row').addClass('highlight');
 });
 
