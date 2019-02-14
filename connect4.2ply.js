@@ -1,9 +1,3 @@
-$('#selectColumn').mouseover(function() {
-  $('#row').addClass('highlight');
+$("cell").mouseover(function(){
+  $("cell").css("background-color", "yellow");
 });
-
-.#highlight{
-  background-color: red;
-  color: white;
-  font-size: 44px;
-}
