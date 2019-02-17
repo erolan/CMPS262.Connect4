@@ -38,6 +38,12 @@ body {
    border-spacing: 3px 15px;
 }
 
+.cell:hover {
+  background:white;
+  color:white;
+  border-radius: 40px;
+}
+
 .row {
   display: table-row;
 }
