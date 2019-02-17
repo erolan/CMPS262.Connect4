@@ -1,116 +1,203 @@
 <!DOCTYPE HTML>
 <!--
-/*
- * CMPS262 - SPR-I - Advanced Programming
- * https://github.com/erolan/CMPS262.Connect4
- * Copyright 2019, erolan, essex, holtz
- */
--->
+   /*
+    * CMPS262 - SPR-I - Advanced Programming
+    * https://github.com/erolan/CMPS262.Connect4
+    * Copyright 2019, erolan, essex, holtz
+    */
+   -->
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Connect Four</title>
     <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <h1>"CMPS262 Spring I - Connect Four"</h1>
-    <div id="connect4"></div>
-    <div id="grid">
-<div class="row">
-  <div class="cell" id="cell00" onclick="pickcolumn(0)"></div>
-  <div class="cell" id="cell01" onclick="pickcolumn(1)"></div>
-  <div class="cell" id="cell02" onclick="pickcolumn(2)"></div>
-  <div class="cell" id="cell03" onclick="pickcolumn(3)"></div>
-  <div class="cell" id="cell04" onclick="pickcolumn(4)"></div>
-  <div class="cell" id="cell05" onclick="pickcolumn(5)"></div>
-  <div class="cell" id="cell06" onclick="pickcolumn(6)"></div>
-</div>
-<div class="row">
-  <div class="cell" id="cell10" onclick="pickcolumn(0)"></div>
-  <div class="cell" id="cell11" onclick="pickcolumn(1)"></div>
-  <div class="cell" id="cell12" onclick="pickcolumn(2)"></div>
-  <div class="cell" id="cell13" onclick="pickcolumn(3)"></div>
-  <div class="cell" id="cell14" onclick="pickcolumn(4)"></div>
-  <div class="cell" id="cell15" onclick="pickcolumn(5)"></div>
-  <div class="cell" id="cell16" onclick="pickcolumn(6)"></div>
-</div>
-<div class="row">
-  <div class="cell" id="cell20" onclick="pickcolumn(0)"></div>
-  <div class="cell" id="cell21" onclick="pickcolumn(1)"></div>
-  <div class="cell" id="cell22" onclick="pickcolumn(2)"></div>
-  <div class="cell" id="cell23" onclick="pickcolumn(3)"></div>
-  <div class="cell" id="cell24" onclick="pickcolumn(4)"></div>
-  <div class="cell" id="cell25" onclick="pickcolumn(5)"></div>
-  <div class="cell" id="cell26" onclick="pickcolumn(6)"></div>
-</div>
-<div class="row">
-  <div class="cell" id="cell30" onclick="pickcolumn(0)"></div>
-  <div class="cell" id="cell31" onclick="pickcolumn(1)"></div>
-  <div class="cell" id="cell32" onclick="pickcolumn(2)"></div>
-  <div class="cell" id="cell33" onclick="pickcolumn(3)"></div>
-  <div class="cell" id="cell34" onclick="pickcolumn(4)"></div>
-  <div class="cell" id="cell35" onclick="pickcolumn(5)"></div>
-  <div class="cell" id="cell36" onclick="pickcolumn(6)"></div>
-</div>
-<div class="row">
-  <div class="cell" id="cell40" onclick="pickcolumn(0)"></div>
-  <div class="cell" id="cell41" onclick="pickcolumn(1)"></div>
-  <div class="cell" id="cell42" onclick="pickcolumn(2)"></div>
-  <div class="cell" id="cell43" onclick="pickcolumn(3)"></div>
-  <div class="cell" id="cell44" onclick="pickcolumn(4)"></div>
-  <div class="cell" id="cell45" onclick="pickcolumn(5)"></div>
-  <div class="cell" id="cell46" onclick="pickcolumn(6)"></div>
-</div>
-<div class="row">
-  <div class="cell" id="cell50" onclick="pickcolumn(0)"></div>
-  <div class="cell" id="cell51" onclick="pickcolumn(1)"></div>
-  <div class="cell" id="cell52" onclick="pickcolumn(2)"></div>
-  <div class="cell" id="cell53" onclick="pickcolumn(3)"></div>
-  <div class="cell" id="cell54" onclick="pickcolumn(4)"></div>
-  <div class="cell" id="cell55" onclick="pickcolumn(5)"></div>
-  <div class="cell" id="cell56" onclick="pickcolumn(6)"></div>
-</div>
-</div>
+</head>
 
-<table class="blueTable">
-<thead>
-<tr>
-<th>&nbsp;Function Name</th>
-<th>&nbsp;Parameters</th>
-<th>&nbsp;Return Value</th>
-<th>&nbsp;Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>&nbsp;ConnectFour</td>
-<td>&nbsp;Rows, Colums, Selector, CreateGrid</td>
-<td>&nbsp;Number of Rows 6, and Number of Columns 7</td>
-<td>&nbsp;Building the Gameboard and eventually the selection process for chips to be used for the game.</td>
-</tr>
-<tr>
-<td>&nbsp;Add Listener (incomplete)</td>
-<td>&nbsp;Hover, Activate Board, AI Player</td>
-<td>&nbsp;</td>
-<td>&nbsp;When players make movements on the board, the listeners pick up the actions to begin</td>
-</tr>
-<tr>
-<td>&nbsp;Reset Button</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;Clear the board of all the chips , and reset game to blank</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-</tr>
-</tbody>
-</table>
-   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"</script>
- <!-- Player modules -->
-     <script src="connect4.2ply.js"></script>
+<body>
+    <h2>"CMPS262 Spring I - Connect Four Defining Rows and Cells"</h2>
+    <div id="connect4">
+        <div id="grid">
+            <div class="row">
+                <div class="cell" id="cell00" onclick="pickcolumn(0)"></div>
+                <div class="cell" id="cell01" onclick="pickcolumn(1)"></div>
+                <div class="cell" id="cell02" onclick="pickcolumn(2)"></div>
+                <div class="cell" id="cell03" onclick="pickcolumn(3)"></div>
+                <div class="cell" id="cell04" onclick="pickcolumn(4)"></div>
+                <div class="cell" id="cell05" onclick="pickcolumn(5)"></div>
+                <div class="cell" id="cell06" onclick="pickcolumn(6)"></div>
+            </div>
+            <div class="row">
+                <div class="cell" id="cell10" onclick="pickcolumn(0)"></div>
+                <div class="cell" id="cell11" onclick="pickcolumn(1)"></div>
+                <div class="cell" id="cell12" onclick="pickcolumn(2)"></div>
+                <div class="cell" id="cell13" onclick="pickcolumn(3)"></div>
+                <div class="cell" id="cell14" onclick="pickcolumn(4)"></div>
+                <div class="cell" id="cell15" onclick="pickcolumn(5)"></div>
+                <div class="cell" id="cell16" onclick="pickcolumn(6)"></div>
+            </div>
+            <div class="row">
+                <div class="cell" id="cell20" onclick="pickcolumn(0)"></div>
+                <div class="cell" id="cell21" onclick="pickcolumn(1)"></div>
+                <div class="cell" id="cell22" onclick="pickcolumn(2)"></div>
+                <div class="cell" id="cell23" onclick="pickcolumn(3)"></div>
+                <div class="cell" id="cell24" onclick="pickcolumn(4)"></div>
+                <div class="cell" id="cell25" onclick="pickcolumn(5)"></div>
+                <div class="cell" id="cell26" onclick="pickcolumn(6)"></div>
+            </div>
+            <div class="row">
+                <div class="cell" id="cell30" onclick="pickcolumn(0)"></div>
+                <div class="cell" id="cell31" onclick="pickcolumn(1)"></div>
+                <div class="cell" id="cell32" onclick="pickcolumn(2)"></div>
+                <div class="cell" id="cell33" onclick="pickcolumn(3)"></div>
+                <div class="cell" id="cell34" onclick="pickcolumn(4)"></div>
+                <div class="cell" id="cell35" onclick="pickcolumn(5)"></div>
+                <div class="cell" id="cell36" onclick="pickcolumn(6)"></div>
+            </div>
+            <div class="row">
+                <div class="cell" id="cell40" onclick="pickcolumn(0)"></div>
+                <div class="cell" id="cell41" onclick="pickcolumn(1)"></div>
+                <div class="cell" id="cell42" onclick="pickcolumn(2)"></div>
+                <div class="cell" id="cell43" onclick="pickcolumn(3)"></div>
+                <div class="cell" id="cell44" onclick="pickcolumn(4)"></div>
+                <div class="cell" id="cell45" onclick="pickcolumn(5)"></div>
+                <div class="cell" id="cell46" onclick="pickcolumn(6)"></div>
+            </div>
+            <div class="row">
+                <div class="cell" id="cell50" onclick="pickcolumn(0)"></div>
+                <div class="cell" id="cell51" onclick="pickcolumn(1)"></div>
+                <div class="cell" id="cell52" onclick="pickcolumn(2)"></div>
+                <div class="cell" id="cell53" onclick="pickcolumn(3)"></div>
+                <div class="cell" id="cell54" onclick="pickcolumn(4)"></div>
+                <div class="cell" id="cell55" onclick="pickcolumn(5)"></div>
+                <div class="cell" id="cell56" onclick="pickcolumn(6)"></div>
+            </div>
+        </div>
+    </div>
 
-  </body>
+    <script>
+        $(function() {
+        $("td").click(function() {
+          // this is a controller for playing a move
+          var id = $(this).attr("id");
+          // play the move in the model
+          connectFour.playMove(id);
+        });
+        // here we update the view when a change has taken place
+        // no need to worry about the model
+        connectFour.addListener(function(grid) {
+          console.log("Model has been updated!");
+          for (var r = 0; r < 6; r++) {
+            for (var c = 0; c < 7; c++) {
+              // clear the cell
+              $("#R"+r+"C"+c).empty();
+              if (grid[r][c] !== null) {
+                // append X or O
+                $("#R"+r+"C"+c).append(grid[r][c]);
+              }
+            }
+          }
+        });
+        });
+    </script>
+    <h2>"CMPS262 Spring I - Connect Four Using Table"</h2>
+    <div id=tablegrid>
+        <table class="tablegrid">
+            <tbody>
+                <tr class="row">
+                    <td id="R0C0" class="cell"></td>
+                    <td id="R0C1" class="cell"></td>
+                    <td id="R0C2" class="cell"></td>
+                    <td id="R0C3" class="cell"></td>
+                    <td id="R0C4" class="cell"></td>
+                    <td id="R0C5" class="cell"></td>
+                    <td id="R0C6" class="cell"></td>
+                </tr>
+                <tr class="row">
+                    <td id="R1C0" class="cell"></td>
+                    <td id="R1C1" class="cell"></td>
+                    <td id="R1C2" class="cell"></td>
+                    <td id="R1C3" class="cell"></td>
+                    <td id="R1C4" class="cell"></td>
+                    <td id="R1C5" class="cell"></td>
+                    <td id="R1C6" class="cell"></td>
+                </tr>
+                <tr class="row">
+                    <td id="R2C0" class="cell"></td>
+                    <td id="R2C1" class="cell"></td>
+                    <td id="R2C2" class="cell"></td>
+                    <td id="R2C3" class="cell"></td>
+                    <td id="R2C4" class="cell"></td>
+                    <td id="R2C5" class="cell"></td>
+                    <td id="R2C6" class="cell"></td>
+                </tr>
+                <tr class="row">
+                    <td id="R3C0" class="cell"></td>
+                    <td id="R3C1" class="cell"></td>
+                    <td id="R3C2" class="cell"></td>
+                    <td id="R3C3" class="cell"></td>
+                    <td id="R3C4" class="cell"></td>
+                    <td id="R3C5" class="cell"></td>
+                    <td id="R3C6" class="cell"></td>
+                </tr>
+                <tr class="row">
+                    <td id="R4C0" class="cell"></td>
+                    <td id="R4C1" class="cell"></td>
+                    <td id="R4C2" class="cell"></td>
+                    <td id="R4C3" class="cell"></td>
+                    <td id="R4C4" class="cell"></td>
+                    <td id="R4C5" class="cell"></td>
+                    <td id="R4C6" class="cell"></td>
+                </tr>
+                <tr class="row">
+                    <td id="R5C0" class="cell"></td>
+                    <td id="R5C1" class="cell"></td>
+                    <td id="R5C2" class="cell"></td>
+                    <td id="R5C3" class="cell"></td>
+                    <td id="R5C4" class="cell"></td>
+                    <td id="R5C5" class="cell"></td>
+                    <td id="R5C6" class="cell"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <table class="blueTable">
+        <thead>
+            <tr>
+                <th>&nbsp;Function Name</th>
+                <th>&nbsp;Parameters</th>
+                <th>&nbsp;Return Value</th>
+                <th>&nbsp;Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>&nbsp;ConnectFour</td>
+                <td>&nbsp;Rows, Colums, Selector, CreateGrid</td>
+                <td>&nbsp;Number of Rows 6, and Number of Columns 7</td>
+                <td>&nbsp;Building the Gameboard and eventually the selection process for chips to be used for the game.</td>
+            </tr>
+            <tr>
+                <td>&nbsp;Add Listener (incomplete)</td>
+                <td>&nbsp;Hover, Activate Board, AI Player</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;When players make movements on the board, the listeners pick up the actions to begin</td>
+            </tr>
+            <tr>
+                <td>&nbsp;Reset Button</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;Clear the board of all the chips , and reset game to blank</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- Player modules -->
+    <script src="connect4.2ply.js"></script>
+</body>
 </html>
