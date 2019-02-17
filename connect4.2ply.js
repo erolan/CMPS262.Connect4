@@ -1,5 +1,5 @@
 
-$("gameboard").mouseover(function(){
+$("grid").mouseover(function(){
   $("cell").css("background-color", "white");
 });
 
