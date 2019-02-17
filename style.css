@@ -10,20 +10,6 @@ body {
 }
 
 /* Creating the formatting for the gameboard */
-#grid {
-  margin: 35px auto;
-  display: table;
-  width: 500px;
-  height: 476px;
-  padding: 6px;
-  background: yellow;
-  border: 9px solid green;
-  border-radius: 20px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-   border-spacing: 3px 15px;
-}
-
 .tablegrid {
   margin: 35px auto;
   display: table;

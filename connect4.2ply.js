@@ -1,19 +1,4 @@
-
-//A function used to add token on the slected column
-function pickColumn(col) {
-    if (player == 1) {
-        grid[5][col] = 1;
-        player = 2;
-        document.getElementById("colorTurn").innerHTML = "Red Turn";
-    } else {
-        grid[5][col] = 2;
-        player = 1;
-        document.getElementById("colorTurn").innerHTML = "Blue Turn";
-    }
-
-    connectFour.clearGrid();
-}
-
+var player = {};
 
 var connectFour = (function() {
     console.log("starting connect4.2ply.js");
