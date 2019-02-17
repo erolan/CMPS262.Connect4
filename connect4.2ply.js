@@ -1,6 +1,3 @@
-$("tablegrid").hover(function() {
-    $("cell").css("background-color", "white");
-});
 
 //A function used to add token on the slected column
 function pickColumn(col) {
