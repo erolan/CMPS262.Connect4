@@ -38,16 +38,6 @@ body {
    border-spacing: 3px 15px;
 }
 
-.cell:hover {
-  background:white;
-  color:white;
-  border-radius: 40px;
-}
-
-.row {
-  display: table-row;
-}
-
 .cell {
   display: table-cell;
   background-color: green;
@@ -57,6 +47,15 @@ body {
   margin: 4px;
 }
 
+.cell:hover {
+  background:white;
+  color:white;
+  border-radius: 40px;
+}
+
+.row {
+  display: table-row;
+}
 
 table.blueTable {
   border: 1px solid #030C11;
