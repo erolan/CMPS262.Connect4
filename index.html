@@ -10,12 +10,15 @@
   <head>
     <meta charset="utf-8">
     <title>Connect Four</title>
-
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <h1>"CMPS262 Spring I - Connect Four"</h1>
     <div id="connect4"></div>
+<table class="gameboard">
+  <thead>
+    <tr>
+      <th>
     <div id="grid">
 <div class="row">
   <div class="cell" id="cell00" onclick="pickcolumn(0)"></div>
@@ -72,6 +75,10 @@
   <div class="cell" id="cell56" onclick="pickcolumn(6)"></div>
 </div>
 </div>
+</tr>
+</thead>
+</table>
+
 <table class="blueTable">
 <thead>
 <tr>
