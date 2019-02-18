@@ -1,5 +1,3 @@
-var player = {};
-
 var connectFour = (function() {
     console.log("starting connect4.2ply.js");
     var grid = [

@@ -16,7 +16,7 @@
 
 <body>
     <script>
-        $(function() {
+    $(function() {
         $("td").click(function() {
           // this is a controller for playing a move
           var id = $(this).attr("id");
@@ -27,20 +27,20 @@
         // no need to worry about the model
         connectFour.addListener(function(grid) {
           console.log("Model has been updated!");
-          for (var r = 0; r < 6; r++) {
-            for (var c = 0; c < 7; c++) {
+          for (var row = 0; row < 6; row++) {
+            for (var col = 0; c < 7; col++) {
               // clear the cell
-              $("#R"+r+"C"+c).empty();
-              if (grid[r][c] !== null) {
+              $("#R"+row+"C"+col).empty();
+              if (grid[row][col] !== null) {
                 // append X or O
-                $("#R"+r+"C"+c).append(grid[r][c]);
+                $("#R"+row+"C"+col).append(grid[row][col]);
+                }
               }
             }
-          }
+          });
         });
-        });
-    </script>
-    
+      </script>
+
     <h2>"CMPS262 Spring I - Connect Four Using Table"</h2>
     <div id=tablegrid>
         <table class="tablegrid">
