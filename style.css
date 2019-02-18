@@ -24,6 +24,64 @@ body {
    border-spacing: 3px 15px;
 }
 
+.tablegrid button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 0;
+  background: #bbb;
+}
+
+button.red {
+  background: #ad0505;
+}
+
+button.black {
+  background: #000;
+}
+
+.player {
+  text-transform: capitalize;
+}
+
+.info .red {
+  color: red;
+}
+
+.info .black {
+  color: black;
+}
+
+.play-again {
+  display: none;
+}
+.play-again {
+  display: inline-block;
+  margin-bottom: 2em;
+  height: 40px;
+  line-height: 40px;
+  width: 50%;
+  background: mediumseagreen;
+  color: white;
+  text-decoration: none;
+  font-family: helvetica;
+  opacity: 0.9;
+}
+.play-again:hover {
+  opacity: 1;
+}
+
+@media (max-width: 600px) {
+  .message {
+    font-size: 1.3em;
+  }
+
+  .tablegrid button {
+    width: 30px;
+    height: 30px;
+  }
+}
+
 .cell {
   display: table-cell;
   background-color: green;
@@ -41,6 +99,22 @@ body {
 
 .row {
   display: table-row;
+}
+
+.tablegrid button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 0;
+  background: #bbb;
+}
+
+button.red {
+  background: #ad0505;
+}
+
+button.black {
+  background: #000;
 }
 
 table.blueTable {
