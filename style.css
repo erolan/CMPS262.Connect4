@@ -106,7 +106,7 @@ button.black {
   height: 60px;
   border-radius: 50%;
   border: 0;
-  background: #bbb;
+  background: green;
 }
 
 button.red {
