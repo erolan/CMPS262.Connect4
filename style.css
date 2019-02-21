@@ -38,6 +38,9 @@ button.red {
 
 button.black {
   background: #000;
+  margin-block-end: initial;
+  background: black;
+  color: white;
 }
 
 .player {
@@ -99,6 +102,12 @@ button.black {
 
 .row {
   display: table-row;
+}
+
+.tablegrid button:hover {
+  background:white;
+  color:white;
+  border-radius: 40px;
 }
 
 .tablegrid button {
