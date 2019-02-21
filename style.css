@@ -147,3 +147,9 @@ table.blueTable thead th:first-child {
 table.blueTable tfoot td {
   font-size: 14px;
 }
+
+element {
+	margin-block-end: initial;
+	background: black;
+	color: white;
+}
