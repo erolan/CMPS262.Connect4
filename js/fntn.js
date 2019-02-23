@@ -1,6 +1,6 @@
-
 function addDiscToBoard(color, x_pos, y_pos) {
     board[y_pos][x_pos] = color;
+
 }
 
 function printBoard() {
@@ -200,3 +200,7 @@ function dWin() {
     }
     return false;
 }
+
+$( function() {
+  $( "#draggable" ).draggable();
+} );
