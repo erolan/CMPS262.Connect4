@@ -15,10 +15,10 @@ function printBoard() {
 
 // fntn to swap players
 function changePlayer() {
-    if (currentPlayer === 'black') {
+    if (currentPlayer === 'blue') {
         currentPlayer = 'red';
     } else {
-        currentPlayer = 'black';
+        currentPlayer = 'blue';
     }
     $('#player').removeClass().addClass(currentPlayer).text(config[currentPlayer + "PlayerName"]);
 }
