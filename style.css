@@ -1,18 +1,12 @@
 body {
-    font-family: Arial, Geneva, Helvetica, sans-serif;
-    background: url(ppu_oldschool.jpg) no-repeat fixed center;
-    background-size: cover;
-    padding: 30px;
-    text-align: center;
-    color: yellow;
-    background-color: grey;
-    font-size: larger;
-}
-
-#draggable {
-  width: 150px;
-  height: 150px;
-  padding: 0.5em;
+  font-family: Arial, Geneva, Helvetica, sans-serif;
+  background: url(ppu_oldschool.jpg) no-repeat fixed center;
+  background-size: cover;
+  padding: 30px;
+  text-align: center;
+  color: yellow;
+  background-color: grey;
+  font-size: larger;
 }
 
 /* Creating the formatting for the gameboard */
@@ -27,7 +21,12 @@ body {
   border-radius: 20px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-   border-spacing: 3px 15px;
+  border-spacing: 3px 15px;
+  position: absolute;
+z-index: 9;
+background-color: #f1f1f1;
+border: 1px solid #d3d3d3;
+text-align: center;
 }
 
 .tablegrid button {
@@ -85,9 +84,9 @@ button.black {
     font-size: 1.3em;
   }
 
-  .tablegrid button {
-    width: 30px;
-    height: 30px;
+.tablegrid button {
+  width: 30px;
+  height: 30px;
   }
 }
 
@@ -167,4 +166,12 @@ element {
 	margin-block-end: initial;
 	background: black;
 	color: white;
+}
+
+#moveable {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #2196F3;
+  color: #fff;
 }
