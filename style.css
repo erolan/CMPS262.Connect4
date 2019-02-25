@@ -36,10 +36,10 @@ button.red {
   background: #ad0505;
 }
 
-button.blue {
+button.black {
   background: #000;
   margin-block-end: initial;
-  background: blue;
+  background: black;
   color: white;
 }
 
@@ -49,9 +49,9 @@ button.blue {
   background: #fff8dc;
 }
 
-#player.blue {
+#player.black {
   background: #fff8dc;
-  color: blue;
+  color: black;
 }
 
 #player.red {

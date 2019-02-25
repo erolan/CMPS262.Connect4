@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    config.blackPlayerName = prompt("PLAYER ONE Name (Black Pieces)", config.blackPlayerName) || config.blackPlayerName;
+    config.blackPlayerName = prompt("PLAYER ONE Name (black Pieces)", config.blackPlayerName) || config.blackPlayerName;
     config.redPlayerName = prompt("PLAYER TWO Name (Red Pieces)", config.redPlayerName) || config.redPlayerName;
     $('.prefix').text(config.playerPrefix);
     $('#player').addClass(currentPlayer).text(config[currentPlayer + "PlayerName"]);
