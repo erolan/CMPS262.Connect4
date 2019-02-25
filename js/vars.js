@@ -1,8 +1,8 @@
 // js to create variables to be used in game.
 var config = {
-        blackPlayerName: "PLAYER ONE",
+        bluePlayerName: "PLAYER ONE",
         redPlayerName: "PLAYER TWO",
-        startingPlayer: "black",
+        startingPlayer: "blue",
         takenMsg: "This row is full, choose another.",
         drawMsg: "This game is a draw.",
         playerPrefix: "Current Player is: ",

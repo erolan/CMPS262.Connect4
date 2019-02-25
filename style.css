@@ -1,6 +1,6 @@
 body {
   font-family: Arial, Geneva, Helvetica, sans-serif;
-  background: url(ppu_oldschool.jpg) no-repeat fixed center;
+  background: url(images/ppu_oldschool.jpg) no-repeat fixed center;
   background-size: cover;
   padding: 30px;
   text-align: center;
@@ -22,11 +22,6 @@ body {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
   border-spacing: 3px 15px;
-  position: absolute;
-z-index: 9;
-background-color: #f1f1f1;
-border: 1px solid #d3d3d3;
-text-align: center;
 }
 
 .tablegrid button {
@@ -41,23 +36,35 @@ button.red {
   background: #ad0505;
 }
 
-button.black {
+button.blue {
   background: #000;
   margin-block-end: initial;
-  background: black;
+  background: blue;
   color: white;
 }
 
 .player {
   text-transform: capitalize;
+  color: #008000;
+  background: #fff8dc;
+}
+
+#player.blue {
+  background: #fff8dc;
+  color: blue;
+}
+
+#player.red {
+  background: #fff8dc;
+  color: red;
 }
 
 .info .red {
   color: red;
 }
 
-.info .black {
-  color: black;
+.info .blue {
+  color: blue;
 }
 
 .play-again {
@@ -127,7 +134,7 @@ button.red {
   background: #ad0505;
 }
 
-button.black {
+button.blue {
   background: #000;
 }
 
@@ -160,18 +167,4 @@ table.blueTable thead th:first-child {
 
 table.blueTable tfoot td {
   font-size: 14px;
-}
-
-element {
-	margin-block-end: initial;
-	background: black;
-	color: white;
-}
-
-#moveable {
-  padding: 10px;
-  cursor: move;
-  z-index: 10;
-  background-color: #2196F3;
-  color: #fff;
 }
