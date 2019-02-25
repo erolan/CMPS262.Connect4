@@ -32,17 +32,6 @@ body {
   background: #green;
 }
 
-button.red {
-  background: #ad0505;
-}
-
-button.black {
-  background: #000;
-  margin-block-end: initial;
-  background: black;
-  color: white;
-}
-
 .player {
   text-transform: capitalize;
   color: #008000;
@@ -120,14 +109,6 @@ button.black {
   background:white;
   color:white;
   border-radius: 40px;
-}
-
-.tablegrid button {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  border: 0;
-  background: green;
 }
 
 button.red {

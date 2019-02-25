@@ -2,7 +2,7 @@
 var config = {
         blackPlayerName: "PLAYER ONE",
         redPlayerName: "PLAYER TWO",
-        startingPlayer: "PLAYER ONE",
+        startingPlayer: "black",
         takenMsg: "This row is full, choose another.",
         drawMsg: "This game is a draw.",
         playerPrefix: "Current Player is: ",
