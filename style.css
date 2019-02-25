@@ -12,19 +12,29 @@ body {
 h1 {
   background: green;
   padding: 10px;
-  margin-left: 500px;
-  margin-right: 500px;
+  margin: auto;
 }
 
 h2{
   background: yellow;
   color: green;
-  margin-left: 500px;
-  margin-right: 500px;
+  margin-left: 250px;
+  margin-right: 250px;
+  height: 35px
 }
 
-.start{
-
+button.start{
+  background:    #00ff00;
+  background:    -webkit-linear-gradient(#72720e, #00ff00 50%, #72720e);
+  background:    linear-gradient(#72720e, #00ff00 50%, #72720e);
+  border-radius: 1000px;
+  box-shadow:    0 1px #444444;
+  padding:       10px 25px;
+  color:         #ffff00;
+  display:       inline-block;
+  font:          normal 700 24px/1 "Roboto", sans-serif;
+  text-align:    center;
+  text-shadow:   2px 2px #38761d;
 }
 
 /* Creating the formatting for the gameboard */
@@ -196,12 +206,13 @@ table.blueTable tfoot td {
   padding: 0;
   border: 0;
   list-style: none;
-  line-height: 2;
+  line-height: 1;
   display: block;
   position: relative;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  height: 50px;
 }
 #cssmenu:after,
 #cssmenu > ul:after {
