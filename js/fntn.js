@@ -1,3 +1,11 @@
+
+$( document ).ready(function() {
+    console.log( "ready!" );
+    $('h2').hide("fast");
+});
+
+
+
 function addDiscToBoard(color, x_pos, y_pos) {
     board[y_pos][x_pos] = color;
 }
@@ -218,6 +226,8 @@ function begin() {
     config.redPlayerName = prompt("PLAYER TWO Name (Red Pieces)", config.redPlayerName) || config.redPlayerName;
     $('.prefix').text(config.playerPrefix);
     $('#player').addClass(currentPlayer).text(config[currentPlayer + "PlayerName"]);
+    $('h2').show("slow");
+    $('#start').hide("fast");
     $('.tablegrid button').click(function(e) {
         var y_pos = $('.tablegrid tr').index($(this).closest('tr'));
         var x_pos = $(this).closest('tr').find('td').index($(this).closest('td'));
