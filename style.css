@@ -386,6 +386,9 @@ table.blueTable tfoot td {
   color: #777777;
   background: #ffffff;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.1), -1px 1px 1px rgba(0, 0, 0, 0.1);
+  font-weight: bolder;
+  font-size: 15px;
+  text-align: left;
 }
 #cssmenu ul ul li:hover > a,
 #cssmenu ul ul li.active > a {
