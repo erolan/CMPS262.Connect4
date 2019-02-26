@@ -18,8 +18,7 @@ h1 {
 h2{
   background: yellow;
   color: green;
-  margin-left: 250px;
-  margin-right: 250px;
+  margin:auto;
   height: 35px
 }
 
