@@ -13,13 +13,15 @@ h1 {
   background: green;
   padding: 10px;
   margin: auto;
+  opacity: 0.8;
 }
 
 h2{
   background: yellow;
   color: green;
   margin:auto;
-  height: 35px
+  height: 35px;
+  opacity: 0.8;
 }
 
 button#start{
@@ -34,6 +36,10 @@ button#start{
   font:          normal 700 24px/1 "Roboto", sans-serif;
   text-align:    center;
   text-shadow:   2px 2px #38761d;
+}
+
+button#start:hover {
+  opacity: 1;
 }
 
 /* Creating the formatting for the gameboard */
@@ -98,13 +104,18 @@ button.black {
   display: inline-block;
   margin-bottom: 2em;
   height: 40px;
-  line-height: 40px;
   width: 50%;
-  background: mediumseagreen;
-  color: white;
   text-decoration: none;
   font-family: helvetica;
-  opacity: 0.9;
+  opacity: 0.8;
+  background:    linear-gradient(#72720e, #00ff00 50%, #72720e);
+  border-radius: 1000px;
+  box-shadow:    0 1px #444444;
+  padding:       10px 25px;
+  color:         #ffff00;
+  font:          normal 700 24px/1 "Roboto", sans-serif;
+  text-align:    center;
+  text-shadow:   2px 2px #38761d;
 }
 .play-again:hover {
   opacity: 1;

@@ -213,16 +213,6 @@ $('#cssmenu').prepend('<div id="menu-button">Menu</div>');
 });
 } )( jQuery );
 
-
-function begin(buttonElement){
-  alert(buttonElement.id);
-  var buttonClickedId = buttonElement.id;
-  if( buttonClickedId = 'start' ){
-    src="js/control.js"
-  }
-}
-
-
 function begin() {
     config.blackPlayerName = prompt("PLAYER ONE Name (Black Pieces)", config.blackPlayerName) || config.blackPlayerName;
     config.redPlayerName = prompt("PLAYER TWO Name (Red Pieces)", config.redPlayerName) || config.redPlayerName;
@@ -242,11 +232,13 @@ function begin() {
         if (vWin() || hWin() || dWin()) {
             $('.tablegrid button').unbind('click');
             $('.prefix').text(config.winPrefix);
+
             $('.play-again').show("slow");
             return;
         } else if (gameIsDraw()) {
             $('.tablegrid button').unbind('click');
             $('.message').text(config.drawMsg);
+            $('#start').hide("slow");
             $('.play-again').show("slow");
             return;
         }
