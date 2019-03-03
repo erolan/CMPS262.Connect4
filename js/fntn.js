@@ -6,6 +6,7 @@ $( document ).ready(function() {
 
 function addDiscToBoard(color, x_pos, y_pos) {
     board[y_pos][x_pos] = color;
+    console.log(color,y_pos,x_pos);
 }
 
 function printBoard() {
@@ -18,13 +19,18 @@ function printBoard() {
         }
     }
 }
-
+var bturns = null;
+var rturns = null;
 // fntn to swap players
 function changePlayer() {
     if (currentPlayer === 'black') {
         currentPlayer = 'red';
+        rturns++
+        console.log(rturns);
     } else {
         currentPlayer = 'black';
+        bturns++
+        console.log(bturns);
     }
     $('#player').removeClass().addClass(currentPlayer).text(config[currentPlayer + "PlayerName"]);
 }
@@ -256,3 +262,7 @@ function begin() {
         location.reload();
     });
 };
+
+$(document).bind("mobileinit", function(){
+  $.mobile.touchOverflowEnabled = true;
+});

@@ -12,20 +12,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Connect Four</title>
-    <link rel="stylesheet" href="css/themes/my-custom-theme.css" />
-    <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+        <!-- Detect if a mobile screen or larger screen -->
     <link rel="stylesheet" href="style.css">
+        <!-- Load the jquery script and remote function libraries -->
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <script src="js/jquery-3.3.1.js"></script>
+        <!-- Begin loading javascript function for this site-->
     <script src="js/vars.js"></script>
     <script src="js/fntn.js"></script>
     <script type="text/javascript"></script>
 </head>
 <body>
 
-<h1>"CMPS262 Spring I - Connect Four"</h1>
+<div class='labels'>CMPS262 Spring I - Connect Four</div>
   <div id='cssmenu'>
   <ul>
      <li><a href='#'><span>Home</span></a></li>
@@ -33,20 +34,20 @@
         <ul>
            <li class='has-sub'><a href='#'><span>ELHubbard</span></a>
               <ul>
-                 <li><a href='#'><span>Sub Product</span></a></li>
-                 <li class='last'><a href='#'><span>Sub Product</span></a></li>
+                 <li><a href='#'><span>First Child</span></a></li>
+                 <li class='last'><a href='#'><span>Last Child</span></a></li>
               </ul>
            </li>
            <li class='has-sub'><a href="module-6-UseCase-ERoland.html"><span>ERoland</span></a>
               <ul>
-                 <li><a href='#'><span></span></a></li>
-                 <li class='last'><a href='#'><span>Sub Product</span></a></li>
+                 <li><a href='#'><span>First Child</span></a></li>
+                 <li class='last'><a href='#'><span>Last Child</span></a></li>
               </ul>
            </li>
            <li class='has-sub'><a href='#'><span>Holtz</span></a>
               <ul>
-                 <li><a href='#'><span>Sub Product</span></a></li>
-                 <li class='last'><a href='#'><span>Sub Product</span></a></li>
+                 <li><a href='#'><span>First Child</span></a></li>
+                 <li class='last'><a href='#'><span>Last Child</span></a></li>
               </ul>
            </li>
         </ul>
@@ -119,8 +120,6 @@
           </tbody>
         </table>
 </div>
-
-
 <div id="table">
 <table class="blueTable">
         <thead>
@@ -139,8 +138,8 @@
                 <td>&nbsp;Building the Gameboard and eventually the selection process for chips to be used for the game.</td>
             </tr>
             <tr>
-                <td>&nbsp;Add Listener (incomplete)</td>
-                <td>&nbsp;Hover, Activate Board, AI Player</td>
+                <td>&nbsp;Add Listener for the events from button clicks</td>
+                <td>&nbsp;Hover the StartMenu tobegin the game</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;When players make movements on the board, the listeners pick up the actions to begin</td>
             </tr>
@@ -159,11 +158,6 @@
         </tbody>
     </table>
 </div>
-    <!-- Player modules -->
-    <!-- Use Cases -->
-    <b>Module 1: JavaScript Review and Arrays</b><br>
-
-        <a href="module-6-UseCase-elhubbard.html">EHubbard - Use Case for Connect 4</a><br>
-
+</div>
 </body>
 </html>
