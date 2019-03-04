@@ -12,13 +12,15 @@ body {
 }
 
 img.c1{
-  height: 400 px;
-  width: 600 px;
+  height: 50%;
+  width: 30%;
+  border: 5.5px solid;
 }
 
 img.c2{
-  height: 400 px;
-  width: 600 px;
+  height: 50%;
+  width: 43%;
+  border: 5px solid;
 }
 
 div.labels{
@@ -66,9 +68,9 @@ button#start:hover {
 .tablegrid {
   margin: 35px auto;
   display: table;
-  width: 500px;
-  height: 475px;
-  padding: 6px;
+  width: 50%;
+  height: 50%;
+  padding: 10px;
   background: yellow;
   border: 9px solid #648f0d;
   border-radius: 20px;
@@ -215,10 +217,7 @@ table.blueTable tbody td {
   color: #333333;
 }
 table.blueTable thead {
-  background: #1C6EA4;
-  background: -moz-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
-  background: -webkit-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
-  background: linear-gradient(to bottom, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+  background: green;
 }
 table.blueTable thead th {
   font-weight: bold;
@@ -522,7 +521,6 @@ table.blueTable tfoot td {
     opacity: 1;
     width: 100%;
     padding: 0;
-    position: relative;
     text-align: left;
   }
   #cssmenu ul ul li {

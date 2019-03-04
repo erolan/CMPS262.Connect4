@@ -19,8 +19,7 @@ function printBoard() {
         }
     }
 }
-var bturns = null;
-var rturns = null;
+
 // fntn to swap players
 function changePlayer() {
     if (currentPlayer === 'black') {

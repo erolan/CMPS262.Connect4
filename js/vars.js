@@ -20,3 +20,6 @@ var board = [[0,0,0,0,0,0,0],
 
 
 var currentPlayer = config.startingPlayer;
+
+var bturns = null;
+var rturns = null;

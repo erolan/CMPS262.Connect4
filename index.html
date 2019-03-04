@@ -10,7 +10,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
     <title>Connect Four</title>
         <!-- Detect if a mobile screen or larger screen -->
     <link rel="stylesheet" href="style.css">
@@ -25,7 +25,10 @@
 </head>
 <body>
 <div class=top> </div>
+<section id="firstpage" data-role="page">
+  <div data-role="header">
 <div class='labels'>CMPS262 Spring I - Connect Four</div>
+  </div>
   <div id='cssmenu'>
   <ul>
      <li><a href='#'><span>Home</span></a></li>
@@ -118,17 +121,6 @@
             </tr>
           </tbody>
         </table>
-        <table>
-          <tr>
-            <td>config.blackPlayerName</td>
-          </tr>
-          <tr>
-            <td>config.redPlayerName</td>
-          </tr>
-          <tr>
-            <td></td>
-          </tr>
-        </table>
 </div>
 
 <header>
@@ -176,9 +168,10 @@
             </tr>
         </tbody>
     </table>
-    <footer>
+    <div data-role="footer">
         <p><a href="#top">[Top]</a></p>
-    </footer>
+    </div>
 </div>
+</section>
 </body>
 </html>
