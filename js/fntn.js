@@ -232,6 +232,7 @@ function begin() {
     $('#player').addClass(currentPlayer).text(config[currentPlayer + "PlayerName"]);
     $('h2').show("slow");
     $('#start').hide("fast");
+    $('.blueTable').hide("fast");
     $('.tablegrid button').click(function(e) {
         var y_pos = $('.tablegrid tr').index($(this).closest('tr'));
         var x_pos = $(this).closest('tr').find('td').index($(this).closest('td'));
@@ -246,13 +247,14 @@ function begin() {
         if (vWin() || hWin() || dWin()) {
             $('.tablegrid button').unbind('click');
             $('.prefix').text(config.winPrefix);
-
             $('.play-again').show("slow");
+            $('.blueTable').show("fast");
             return;
         } else if (gameIsDraw()) {
             $('.tablegrid button').unbind('click');
             $('.message').text(config.drawMsg);
             $('#start').hide("slow");
+            $('.blueTable').show("fast");
             $('.play-again').show("slow");
             return;
         }
